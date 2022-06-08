@@ -4,11 +4,10 @@
 
 <script>
 export default {
-  name: 'ProjectsView'
+ name:'ProjectsView',
 }
 </script>
 
-<style scoped>
-
+<style>
 
 </style>

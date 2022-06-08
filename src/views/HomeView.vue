@@ -207,6 +207,7 @@ export default {
 
   .services-container {
     margin-top: 4rem;
+    margin-bottom: 4rem;
   }
 
   .heading {
