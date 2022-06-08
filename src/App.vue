@@ -15,7 +15,7 @@
     </div>
 
     <div>
-      <button>Контакти</button>
+      <button class="nav-btn">Контакти</button>
     </div>
 
     </div>
@@ -24,6 +24,9 @@
     <router-view/>
 
     <!-- Footer -->
+    <div class="footer">
+      
+    </div>
   </div>
 </template>
 
@@ -53,8 +56,26 @@
     padding: 0rem 1rem;
   }
 
+  .nav-btn {
+    cursor: pointer;
+    padding: 0.5rem 2rem;
+    color: #fff;
+    background: #000;
+    border: 1px solid #000;
+  }
 
+  .nav-btn:hover {
+    padding: 0.5rem 2rem;
+    color: #000;
+    background: #fff;
+    border: 1px solid #000;
+    transition:  0.2s;
+  }
 
+  .nav-btn:hover::after {
+    transition: 0.6s;
+    content: ' ->';
+  }
 /* #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
