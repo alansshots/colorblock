@@ -24,8 +24,15 @@
     <router-view/>
 
     <!-- Footer -->
+    <div class="social-container">
+      <span class="social-icon"><i>FA</i></span>
+      <span class="social-icon"><i>IN</i></span>
+      <span class="social-icon"><i>IN</i></span>
+    </div>
     <div class="footer">
-      
+      <router-link to="/">Политика за поверителност</router-link>
+      <p> copy&; Colorblock Всички права запазени. </p>
+      <router-link to="/">Политика за ползване</router-link>
     </div>
   </div>
 </template>
@@ -76,6 +83,28 @@
     transition: 0.6s;
     content: ' ->';
   }
+
+  /* Footer */
+
+  .social-container {
+    margin-top: 2rem;
+    border-top: dashed 2px #000;
+    width: 100%;
+    padding-top: 1rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+  }
+
+  .footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-content: center;
+  }
+
+
 /* #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
