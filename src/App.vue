@@ -10,12 +10,14 @@
     <nav>
       <router-link to="/">Начало</router-link>
       <router-link to="/about">Информация</router-link>
-      <router-link to="/projects">Проекти</router-link>
+      <!-- <router-link to="/projects">Проекти</router-link> -->
     </nav>
     </div>
 
     <div>
-      <button class="nav-btn" to='/contac'>Контакти</button>
+      <router-link to="/contact">
+      <button class="nav-btn">Контакти</button>
+      </router-link>
     </div>
 
     </div>
