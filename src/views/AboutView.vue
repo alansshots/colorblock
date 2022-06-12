@@ -3,18 +3,20 @@
     <!-- Banner -->
     <div class="banner">
       <div class="banner-text-container">
-        <h1>Lear more about us!</h1>
+        <h1>Научете повече за нас!</h1>
       </div>
     </div>
 
     <!-- About main -->
-    <h2 class="heading">We are a group of creative thinkers reimagining the web</h2>
+    <h2 class="heading">We are a group of creative thinkers reimagining the web.</h2>
 
     <div class="info-container">
       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero ipsa eveniet doloremque, maiores vero veritatis quisquam ea sit repellat labore consequuntur velit quis eius et iusto? Nisi at numquam suscipit architecto repellat dolor odio accusamus.</p>
       <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. In odit ratione hic saepe ab quas? Ullam voluptates cumque laboriosam magnam.</p>
       <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Est hic atque quaerat reprehenderit mollitia earum id tempore quo, iusto sed laboriosam nam, expedita totam! Repudiandae.</p>
-      <button class="info-btn">Learn more</button>
+      <router-link to="/contact">
+      <button class="info-btn">Контакти</button>
+      </router-link>
     </div>
 
   </div>
@@ -30,7 +32,8 @@ export default {
 
 .banner {
   height: 125px;
-  background: url('../assets/logo.png');
+  background: url('../assets/banner.jpg');
+  background-size: 1000px;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -82,10 +85,17 @@ export default {
     transition:  0.2s;
   }
 
-  .info-btn:hover::after {
+  /* .info-btn:hover::after {
     transition: 0.6s;
     content: ' ->';
     color: #000;
-  }
+  } */
+
+@media only screen and (max-width: 600px) {
+    .info-container {
+      text-align: center;
+      width: 80%;
+    }
+}
 
 </style>

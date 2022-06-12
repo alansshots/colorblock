@@ -13,7 +13,7 @@
 
         <div class="form">
             <form action="">
-                <h2>Contact us</h2>
+                <h2>Свържете се с нас</h2>
                 <div class="input-container">
                     <label for="name">Име</label>
                     <input type="text" name="name" placeholder="Въведете вашето име">
@@ -36,7 +36,7 @@
             <div class="details-container">
                 <div class="detail-block">
                     <h3>Работно време:</h3>
-                    <p>9AM-3AM, Mon to Fri</p>
+                    <p>9:00 - 15:00, Пон. до Пет.</p>
                 </div>
 
                 <div class="detail-block">
@@ -45,7 +45,6 @@
                     <p>+359 889 366 414</p>
                 </div>
             </div>
-
         </div>
 
     </div>
@@ -63,7 +62,8 @@ export default {
 
 .banner {
   height: 125px;
-  background: url('../assets/logo.png');
+  background: url('../assets/banner.jpg');
+  background-size: 1000px;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -161,6 +161,35 @@ form h2 {
     flex-direction: row;
     justify-content: start;
     align-items: left;
+}
+
+@media only screen and (max-width: 600px) {
+    .contact-main {
+        margin-top: 1.5rem;
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    .details {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .details-container {
+        width: 94%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+
+    .form {
+        width: 95%;
+        padding: 1rem;
+    }
 }
 
 </style>
