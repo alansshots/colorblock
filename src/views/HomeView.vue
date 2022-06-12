@@ -3,8 +3,8 @@
     <!-- Banner -->
     <div class="banner">
       <div class="banner-text-container">
-        <h1>Grow your business!</h1>
-        <p>Grow your business with a beautifully crafted website!</p>
+        <h1>Развийте бизнеса си!</h1>
+        <p>Развийте бизнеса си с внимателно изработен уеб сайт!</p>
         <button class="banner-btn">Повече Информация</button>
       </div>
     </div>
@@ -18,8 +18,8 @@
       <div class="info-container">
         <h6>информация</h6>
         <div>
-          <h3>Lorem, ipsum dolor.</h3>
-          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sint, omnis aperiam obcaecati temporibus quidem iste neque aliquid magnam repellat delectus.</p>        
+          <h3>Кои сме ние?</h3>
+          <p>Ние предлагаме пълен набор от уеб решения. Нашият екип специалисти ще ви помогне да създадете уебсайт, който да развие бизнеса ви.</p>        
           <router-link to="/about">
           <button class="info-btn">Научете повече</button>
           </router-link>
@@ -45,8 +45,8 @@
       <div class="info-container">
         <h6>контакти</h6>
         <div>
-          <h3>Lorem, ipsum dolor.</h3>
-          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sint, omnis aperiam obcaecati temporibus quidem iste neque aliquid magnam repellat delectus.</p>
+          <h3>Свържете се с нас.</h3>
+          <p>Свържете се с нас, за да разговаряте със специалист или да научите повече за услугите, които предлагаме. Ние сме тук, за да ви помогнем да намерите правилното решение, което да отговаря на вашите нужди.</p>
           <!-- <button class="info-btn">Научете повече</button> -->
           <router-link to="/contact">
           <button class="info-btn">Контакти</button>
@@ -69,7 +69,7 @@
             </span>
             <div>
               <h4>Wordpress и CMS</h4>
-              <p>Разработване на уеб магазин или уеб страница чрез Wordpress или друг CMS.</p>
+              <p>Разработване на уеб магазин или уеб сайт чрез Wordpress или друг CMS.</p>
             </div>
           </div>
 
@@ -80,7 +80,7 @@
             </span>
             <div>
               <h4>Уеб приложения и сайтове</h4>
-              <p>Разработка на уеб приложение или уеб сайт от нулата.</p>
+              <p>Разработка на уеб приложение или уеб страница от нулата.</p>
             </div>
           </div>
       </div>
@@ -191,7 +191,7 @@ export default {
   }
 
   .info-btn {
-    margin-top: 1.5rem;
+    margin-top: 0.5rem;
     cursor: pointer;
     padding: 0.5rem 2rem;
     color: #fff;

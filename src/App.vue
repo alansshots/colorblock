@@ -61,8 +61,8 @@
     </div>
     <div class="footer">
       <router-link to="/">Политика за поверителност</router-link>
-      <p>Colorblock &copy; Всички права запазени. </p>
-      <router-link to="/">Политика за ползване</router-link>
+      <p>Colorblock &copy; 2022 Всички права запазени. </p>
+      <router-link to="/">Условия за ползване</router-link>
     </div>
 
   </div>
@@ -232,6 +232,7 @@
 
   .social-icon {
     padding: 0 1rem ;
+    cursor: pointer;
   }
 
    .social-icon:hover {
