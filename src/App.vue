@@ -36,9 +36,16 @@
     <div class="navbar-mobile" v-if="isActive">
       <div> 
           <nav class="main-nav-mobile">
-            <router-link to="/">Начало</router-link>
-            <router-link to="/about">Информация</router-link>
-            <router-link to="/contact">Контакти</router-link>
+
+            <router-link to="/">
+            <a @click="isActive = !isActive">Начало</a>
+            </router-link>
+            <router-link to="/about">
+            <a @click="isActive = !isActive">Информация</a>
+            </router-link>
+            <router-link to="/contact">
+            <a @click="isActive = !isActive">Контакти</a>
+            </router-link>
           </nav>
       </div>
      </div>
@@ -89,9 +96,9 @@
     font-family: 'Montserrat', sans-serif;
   }
 
-  /* body {
+  body {
     margin: 0;
-  } */
+  } 
 
   .navbar-container {
     width: 100%;
@@ -217,6 +224,7 @@
     justify-content: space-around;
     align-content: center;
     text-decoration: none;
+    text-align: center;
   }
 
   .footer a {

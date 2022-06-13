@@ -181,7 +181,7 @@ form h2 {
     .details-container {
         width: 94%;
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
         justify-content: space-between;
         align-items: flex-start;
     }
@@ -190,6 +190,8 @@ form h2 {
         width: 95%;
         padding: 1rem;
     }
+
+    
 }
 
 </style>

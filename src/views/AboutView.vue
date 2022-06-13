@@ -8,12 +8,13 @@
     </div>
 
     <!-- About main -->
-    <h2 class="heading">We are a group of creative thinkers reimagining the web.</h2>
+    <h2 class="heading">Ние сме екип от креативни творци, които преосмислят онлайн пространството.</h2>
 
     <div class="info-container">
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero ipsa eveniet doloremque, maiores vero veritatis quisquam ea sit repellat labore consequuntur velit quis eius et iusto? Nisi at numquam suscipit architecto repellat dolor odio accusamus.</p>
-      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. In odit ratione hic saepe ab quas? Ullam voluptates cumque laboriosam magnam.</p>
-      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Est hic atque quaerat reprehenderit mollitia earum id tempore quo, iusto sed laboriosam nam, expedita totam! Repudiandae.</p>
+      <p>Colorblock е компания специализирана в изработката на уеб страници и лого дизайн.
+Разполагаме с малък, но много креативен и изобретателен екип.</p>
+      <p>Софтуерът далеч не е обикновен продукт. Той е съществена част от много бизнеси и като такъв той се нуждае от специално внимание за да покрие всички нужди на бизнеса. Colorblock е проект, посветен на създаването на уеб сайтове и софтуер, които се отличават.</p>
+      <p> Colorblock е постоянно адаптираща се и иновативна компания готова да подпомогне развитието на вашия бизнес.</p>
       <router-link to="/contact">
       <button class="info-btn">Контакти</button>
       </router-link>
@@ -55,14 +56,15 @@ export default {
 /* About main */
 
 .heading {
-  margin: 4rem 0;
+  width: 70%;
+  margin: 4rem auto 0 auto;
   text-align: center;
   font-weight: 300;
 }
 
 .info-container {
   width: 55%;
-  margin: 4rem auto;
+  margin: 3rem auto;
 }
 
 /* Action btn */
@@ -95,6 +97,21 @@ export default {
     .info-container {
       text-align: center;
       width: 80%;
+    }
+
+    .banner-text-container h1 {
+      font-size: 1.4rem;
+    }
+
+    .heading {
+      width: 90%;
+      margin: 2rem auto 0 auto;
+      font-size: 1.3rem;
+    }
+
+    .info-container {
+      width: 90%;
+      margin: 3rem auto;
     }
 }
 
