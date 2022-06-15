@@ -41,7 +41,7 @@
 
                 <div class="detail-block">
                     <h3>Контакти</h3>
-                    <p>alengospodinov@gmail.com</p>
+                    <p>colorblocksalles@outlook.com</p>
                     <p>+359 889 366 414</p>
                 </div>
             </div>

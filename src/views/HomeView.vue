@@ -5,7 +5,9 @@
       <div class="banner-text-container">
         <h1>Развийте бизнеса си!</h1>
         <p>Развийте бизнеса си с внимателно изработен уеб сайт!</p>
+        <router-link to="/about">
         <button class="banner-btn">Повече Информация</button>
+        </router-link>
         <div class="container">
         <div class="chevron"></div>
         <div class="chevron"></div>
@@ -26,7 +28,7 @@
           <h3>Кои сме ние?</h3>
           <p>Ние предлагаме пълен набор от уеб решения. Нашият екип специалисти ще създадете уебсайт, който да развие бизнеса ви.</p>        
           <router-link to="/about">
-          <button class="info-btn">Научете повече</button>
+          <button class="info-btn" >Научете повече</button>
           </router-link>
         </div>
       </div>
