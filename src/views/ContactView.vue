@@ -12,7 +12,7 @@
     <div class="contact-main">
 
         <div class="form">
-            <form action="">
+            <form action="https://formsubmit.co/9fccef5cd0ccbf451168790d8497427a" method="POST">
                 <h2>Свържете се с нас</h2>
                 <div class="input-container">
                     <label for="name">Име</label>
