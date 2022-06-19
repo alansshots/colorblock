@@ -24,7 +24,7 @@
 
     <!-- Mobile navbar -->
     <div class="menu-mobile">
-      <h2>Colorblock</h2>
+      <img src="./assets/LogoColorblock.png" alt="logo">
       <svg
       @click="isActive = !isActive"
       xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 16 16" width="25" height="25" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"> 
@@ -109,6 +109,11 @@
   .logo-container img{
     width: 100px;
     margin: 1rem;
+  }
+
+  .menu-mobile img{
+    width: 100px;
+    margin: 0.7rem;
   }
 
   nav a {
