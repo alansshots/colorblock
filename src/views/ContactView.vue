@@ -36,7 +36,7 @@
             <div class="details-container">
                 <div class="detail-block">
                     <h3>Работно време:</h3>
-                    <p>9:00 - 15:00, Пон. до Пет.</p>
+                    <p>10:00 - 18:00, Пон. до Пет.</p>
                 </div>
 
                 <div class="detail-block">
