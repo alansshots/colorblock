@@ -1,5 +1,5 @@
 <template>
-  <div class="contact">
+  <div class="contact page">
     <!-- Banner -->
     <div class="banner">
       <div class="banner-text-container">

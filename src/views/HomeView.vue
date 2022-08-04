@@ -1,5 +1,5 @@
 <template>
-  <div class="home">
+  <div class="home page">
     <!-- Banner -->
     <div class="banner">
       <div class="banner-text-container">

@@ -49,7 +49,9 @@
      </div>
 
     <!-- Load content -->
-    <router-view/>
+    <transition name="router-anim" enter-active-class="animated" leave-active-class="animated ">
+      <router-view/>
+    </transition>
 
     <!-- Footer -->
     <div  class="social-container">
@@ -87,6 +89,7 @@
  
 
 <style>
+  @import "https://cdn.jsdelivr.net/npm/animate.css@3.5.1";
   @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700&display=swap');
 
   * {
@@ -97,6 +100,10 @@
   body {
     margin: 0;
   } 
+
+  .page {
+    width: inherit;
+  }
 
   .navbar-container {
     width: 100%;
@@ -122,8 +129,6 @@
   }
 
   nav a.router-link-exact-active {
-   /* transition: 0.1s; */
-    /* border-bottom: 2px solid #42b983; */
    border-bottom: 2px solid #000;
   } 
 

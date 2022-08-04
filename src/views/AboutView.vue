@@ -1,5 +1,5 @@
 <template>
-  <div class="about">
+  <div class="about page">
     <!-- Banner -->
     <div class="banner">
       <div class="banner-text-container">
@@ -32,7 +32,7 @@ export default {
 <style scoped>
 
 .banner {
-  height: 125px;
+  height: 225px;
   background: url('../assets/banner.jpg');
   background-size: 1000px;
   display: flex;
@@ -56,14 +56,14 @@ export default {
 /* About main */
 
 .heading {
-  width: 70%;
+  width: 40%;
   margin: 4rem auto 0 auto;
   text-align: center;
   font-weight: 300;
 }
 
 .info-container {
-  width: 55%;
+  width: 40%;
   margin: 3rem auto;
 }
 
