@@ -32,7 +32,8 @@ export default {
 <style scoped>
 
 .banner {
-  height: 225px;
+  /* height: 225px; */
+  height: 425px;
   background: url('../assets/banner.jpg');
   background-size: 1000px;
   display: flex;

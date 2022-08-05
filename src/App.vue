@@ -3,14 +3,16 @@
     <!-- Navbar -->
     <div class="navbar-container">
       <div class="logo-container">
-        <img src="./assets/LogoColorblock.png" alt="logo">
+        <router-link to="/">
+          <img src="./assets/LogoColorblock.png" alt="logo">
+        </router-link>
       </div>
 
     <div class="main-nav"> 
     <nav>
       <router-link to="/">Начало</router-link>
       <router-link to="/about">Информация</router-link>
-      <!-- <router-link to="/projects">Проекти</router-link> -->
+      <router-link to="/projects">Проекти</router-link>
     </nav>
     </div>
 
@@ -44,14 +46,17 @@
             <router-link to="/contact">
             <a @click="isActive = !isActive">Контакти</a>
             </router-link>
+            <!-- <router-link to="/projects">
+            <a @click="isActive = !isActive">Контакти</a>
+            </router-link> -->
           </nav>
       </div>
      </div>
 
     <!-- Load content -->
-    <transition name="router-anim" enter-active-class="animated" leave-active-class="animated ">
+    <!-- <transition name="router-anim" enter-active-class="animated fadeIn" leave-active-class="animated fadeOut"> -->
       <router-view/>
-    </transition>
+    <!-- </transition> -->
 
     <!-- Footer -->
     <div  class="social-container">
@@ -102,6 +107,7 @@
   } 
 
   .page {
+    /* position: absolute; */
     width: inherit;
   }
 
