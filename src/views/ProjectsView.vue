@@ -10,49 +10,53 @@
   <!-- Projects -->
   <main>
     <div class="short">
-      <h3>A note about style</h3>
-      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quisquam, reprehenderit.</p>
-      <a href="">Read more</a>
+      <h3>Cryptocoin</h3>
+      <p>Уеб сайт за проследяване на цените на криптоактиви. Неговата мисия е да предостави на потребителите висококачествена и точна информация за изготвяне на собствени информирани заключения.</p>
+      <a href="http://wine-project.net/" target="_blank">
+          <button class="info-btn" >Виж повече</button>
+      </a>
     </div>
     <div class="tall">
-      <img src="" alt="model">
+      <img src="" alt="site-img">
+    </div>
+    <div class="short">
+      <h3>Wine Project</h3>
+      <p>ВАЙН ПРОДЖЕКТ ЕООД извършва проектиране, внедряване и поддръжка на съвременни ИТ решения, базирани на широка гама от продукти и решения на утвърдени световни производители.</p>
+      <a href="http://wine-project.net/" target="_blank">
+          <button class="info-btn" >Виж повече</button>
+      </a>
+    </div>
+    <div class="tall">
+      <img src="" alt="site-img">
+    </div>
+    <div class="tall">
+      <img src="" alt="site-img">
+    </div>
+    <div class="tall">
+      <h3>Wine Project</h3>
+      <p>ВАЙН ПРОДЖЕКТ ЕООД извършва проектиране, внедряване и поддръжка на съвременни ИТ решения, базирани на широка гама от продукти и решения на утвърдени световни производители.</p>
+      <a href="http://wine-project.net/" target="_blank">
+          <button class="info-btn" >Виж повече</button>
+      </a>
     </div>
     <div class="short">
       <h3>A note about style</h3>
       <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quisquam, reprehenderit.</p>
       <a href="">Read more</a>
     </div>
-    <div class="tall">
-      <img src="img/2.png" alt="model">
-    </div>
-    <div class="tall">
-      <img src="img/3.png" alt="model">
-    </div>
-    <div class="tall">
-      <h3>A note about style</h3>
-      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quisquam, reprehenderit.</p>
-      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quas perspiciatis natus sit dicta repellendus quia mollitia. Voluptas ullam ipsa dolorem.</p>
-      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Esse accusamus possimus asperiores fugiat at nostrum odio repellendus voluptates. Iusto asperiores voluptate similique maiores ut omnis dolores corporis, tenetur excepturi quis?</p>
-      <a href="">Read more</a>
-    </div>
-    <div class="short">
-      <h3>A note about style</h3>
-      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quisquam, reprehenderit.</p>
-      <a href="">Read more</a>
-    </div>
-    <div class="tall">
+    <!-- <div class="tall">
       <img src="img/1.png" alt="model">
-    </div>
+    </div> -->
     <div class="short">
       <h3>A note about style</h3>
       <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quisquam, reprehenderit.</p>
       <a href="">Read more</a>
     </div>
-    <div class="short">
+    <!-- <div class="short">
       <h3>A note about style</h3>
       <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quisquam, reprehenderit.</p>
       <a href="">Read more</a>
-    </div>
+    </div> -->
   </main>
 </div>
 </template>
@@ -91,13 +95,13 @@ export default {
 
   /* Projects */
   main {
-  max-width: 1200px;
-  margin: 60px auto;
-  padding: 20px;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-auto-rows: 250px;
-  gap: 30px;
+    max-width: 1200px;
+    margin: 60px auto;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-auto-rows: 250px;
+    gap: 30px;
   }
 
   main div {
@@ -108,9 +112,13 @@ export default {
     box-shadow: 3px 3px 5px rgba(0,0,0,0.05);
   }
 
+  div h3 {
+    margin: 0.5rem 0;
+  }
+
   main img {
     min-width: 100%;
-    height: 100%;
+    /* height: 100%; */
   }
 
   main .short {
@@ -120,6 +128,25 @@ export default {
   main .tall {
     grid-row: span 2;
  }
+
+  .info-btn {
+    cursor: pointer;
+    padding: 0.5rem 0.5rem;
+    color: #fff;
+    background: #000;
+    border: 1px solid #fff;
+    transition:  0.2s;
+  }
+
+  .info-btn:hover {
+    padding: 0.5rem 0.5rem;
+    color: #000;
+    background: #fff;
+    border: 1px solid #000;
+    transition:  0.2s;
+  }
+
+  /* Responsive */
 
   @media screen and (max-width: 960px) {
     main {
