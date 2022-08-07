@@ -32,26 +32,26 @@
     <div class="tall">
       <img src="" alt="site-img">
     </div>
-    <div class="tall">
-      <h3>Wine Project</h3>
-      <p>ВАЙН ПРОДЖЕКТ ЕООД извършва проектиране, внедряване и поддръжка на съвременни ИТ решения, базирани на широка гама от продукти и решения на утвърдени световни производители.</p>
-      <a href="http://wine-project.net/" target="_blank">
+    <div class="short">
+      <h3>Axis</h3>
+      <p>„Аxis“ представлява решение за 3D-принтер. В сайта може да бъде намерена информация за това как се използва принтера, както и обща информация за 3D принтирането.</p>
+      <a href="http://3dprint.webimpression.net/home" target="_blank">
           <button class="info-btn" >Виж повече</button>
       </a>
     </div>
-    <div class="short">
+    <!-- <div class="short">
       <h3>A note about style</h3>
       <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quisquam, reprehenderit.</p>
       <a href="">Read more</a>
-    </div>
+    </div> -->
     <!-- <div class="tall">
       <img src="img/1.png" alt="model">
     </div> -->
-    <div class="short">
+    <!-- <div class="short">
       <h3>A note about style</h3>
       <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quisquam, reprehenderit.</p>
       <a href="">Read more</a>
-    </div>
+    </div> -->
     <!-- <div class="short">
       <h3>A note about style</h3>
       <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quisquam, reprehenderit.</p>

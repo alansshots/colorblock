@@ -61,9 +61,10 @@ export default {
 <style scoped>
 
 .banner {
-  height: 125px;
+  height: 425px;
   background: url('../assets/banner.jpg');
-  background-size: 1000px;
+  background-size: 1050px;
+  object-fit: contain;
   display: flex;
   flex-direction: row;
   justify-content: center;

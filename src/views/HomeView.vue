@@ -6,7 +6,7 @@
         <h1>Развийте бизнеса си!</h1>
         <p>Развийте бизнеса си с внимателно изработен уеб сайт!</p>
         <router-link to="/about">
-        <button class="banner-btn">Повече Информация</button>
+        <button class="banner-btn">Повече информация</button>
         </router-link>
         <div class="container">
         <div class="chevron"></div>
@@ -243,6 +243,7 @@ export default {
     color: #000;
     background: #fff;
     border: 1px solid #fff;
+    transition:  0.4s;
   }
 
   .banner-btn:hover {
@@ -287,6 +288,7 @@ export default {
     color: #fff;
     background: #000;
     border: 1px solid #fff;
+    transition:  0.2s;
   }
 
   .info-btn:hover {

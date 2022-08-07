@@ -32,10 +32,10 @@ export default {
 <style scoped>
 
 .banner {
-  /* height: 225px; */
   height: 425px;
   background: url('../assets/banner.jpg');
-  background-size: 1000px;
+  background-size: 1050px;
+  object-fit: contain;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -78,6 +78,7 @@ export default {
     color: #fff;
     background: #000;
     border: 1px solid #fff;
+    transition:  0.2s;
   }
 
   .info-btn:hover {
