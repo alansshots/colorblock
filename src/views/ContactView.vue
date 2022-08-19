@@ -12,7 +12,7 @@
     <div class="contact-main">
 
         <div class="form">
-            <form action="https://formsubmit.co/9fccef5cd0ccbf451168790d8497427a" method="POST">
+            <form action="https://formsubmit.co/0af456590b6c3192539678ea219aff63" method="POST">
                 <h2>Свържете се с нас</h2>
                 <div class="input-container">
                     <label for="name">Име</label>
@@ -41,7 +41,7 @@
 
                 <div class="detail-block">
                     <h3>Контакти</h3>
-                    <p>colorblocksalles@outlook.com</p>
+                    <p>hello@colorblockweb.com</p>
                     <p>+359 889 366 414</p>
                 </div>
             </div>
