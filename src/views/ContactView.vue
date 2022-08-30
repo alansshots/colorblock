@@ -12,15 +12,15 @@
     <div class="contact-main">
 
         <div class="form">
-            <form action="https://formsubmit.co/0af456590b6c3192539678ea219aff63" method="POST">
+            <form  ref="form" @submit.prevent="sendEmail">
                 <h2>Свържете се с нас</h2>
                 <div class="input-container">
                     <label for="name">Име</label>
-                    <input type="text" name="name" placeholder="Въведете вашето име">
+                    <input type="text" name="user_name" placeholder="Въведете вашето име">
                 </div>
                 <div class="input-container">
                     <label for="email">Имейл</label>
-                    <input type="email" name="email" placeholder="Въведете вашия имейл">
+                    <input type="email" name="user_email" placeholder="Въведете вашия имейл">
                 </div>
                 <div class="input-container">
                     <label for="message">Съобщение</label>
@@ -29,6 +29,13 @@
 
                 <button class="info-btn">Изпрати</button>
 
+                <div class="alert-true hidden" role="alert">
+                    <span >Вашето запитване беше успешно изпратено!</span>
+                </div>
+
+                <div class="alert-false hidden" role="alert">
+                    <span >Нещо се обърка. Моля опитайте по-късно.</span>
+                </div>
             </form>
         </div>
 
@@ -53,8 +60,33 @@
 </template>
 
 <script>
+import emailjs from '@emailjs/browser';
+
 export default {
-  name: 'ContactView'
+  name: 'ContactView',
+  data() {
+    return {
+        emailSuccess: null,
+    }
+  },
+  methods: {
+    sendEmail() {
+      emailjs.sendForm('service_10ux40j', 'template_ya0dape', this.$refs.form, 'tFPkG7-hDXPzH3GAr')
+        .then((result) => {
+            console.log('SUCCESS!', result.text);
+                document.querySelector('.alert-true').classList.remove('hidden')
+            setInterval(() => {
+                document.querySelector('.alert-true').classList.remove('hidden')
+            }, 4000);
+        }, (error) => {
+            console.log('FAILED...', error.text);
+                document.querySelector('.alert-false').classList.remove('hidden')
+            setInterval(() => {
+                document.querySelector('.alert-false').classList.add('hidden')
+            }, 4000);
+        });
+    }
+  }
 }
 </script>
 
@@ -148,11 +180,19 @@ form h2 {
     transition:  0.2s;
 }
 
-/* .info-btn:hover::after {
-    transition: 0.6s;
-    content: ' ->';
-    color: #000;
-} */
+.alert-true {
+    margin-top: 10px;
+    padding: 10px;
+    border: 1px solid black;
+    background: #F0FDF4;
+}
+
+.alert-false {
+    margin-top: 10px;
+    padding: 10px;
+    border: 1px solid black;
+    background: #FEF2F2;
+}
 
 /* Contact details */
 
